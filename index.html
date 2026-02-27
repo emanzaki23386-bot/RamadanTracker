@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .tracker {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .date {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .progress {
+            margin: 20px 0;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-inner {
+            height: 100%;
+            background: #76c7c0;
+            width: 0%;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="tracker">
+        <h1>Ramadan Tracker</h1>
+        <div class="date">Current Date: 2026-02-27</div>
+        <div class="progress">
+            <div class="progress-inner" style="width: 0%;"></div>
+        </div>
+        <button onclick="startTracking()">Start Tracking</button>
+        <script>
+            function startTracking() {
+                // Logic to update the progress of Ramadan
+                let progress = document.querySelector('.progress-inner');
+                progress.style.width = '50%'; // Example progress, change as needed
+            }
+        </script>
+    </div>
+</body>
+</html>
